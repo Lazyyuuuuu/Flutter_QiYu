@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/qiyu.iml" filepath="$PROJECT_DIR$/qiyu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/qiyu_android.iml" filepath="$PROJECT_DIR$/android/qiyu_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/qiyu_example_android.iml" filepath="$PROJECT_DIR$/example/android/qiyu_example_android.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - qiyu (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios-release`)
+  - qiyu (from `.symlinks/plugins/qiyu/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: .symlinks/flutter/ios-release
+  qiyu:
+    :path: .symlinks/plugins/qiyu/ios
+
+SPEC CHECKSUMS:
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  qiyu: a0824097ada6919bc8b37db77be499978078ff36
+
+PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
+
+COCOAPODS: 1.4.0
