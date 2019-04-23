@@ -16,6 +16,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await Qiyu.platformVersion, '42');
+    expect(await Qiyu().platformVersion, '42');
   });
 }

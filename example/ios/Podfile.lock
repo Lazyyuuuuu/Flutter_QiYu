@@ -2,20 +2,23 @@ PODS:
   - Flutter (1.0.0)
   - qiyu (0.0.1):
     - Flutter
+    - QIYU_iOS_SDK (~> 4.3.0)
+  - QIYU_iOS_SDK (4.3.0)
 
 DEPENDENCIES:
-  - Flutter (from `.symlinks/flutter/ios-release`)
+  - Flutter (from `.symlinks/flutter/ios`)
   - qiyu (from `.symlinks/plugins/qiyu/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
-    :path: .symlinks/flutter/ios-release
+    :path: .symlinks/flutter/ios
   qiyu:
     :path: .symlinks/plugins/qiyu/ios
 
 SPEC CHECKSUMS:
   Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
-  qiyu: a0824097ada6919bc8b37db77be499978078ff36
+  qiyu: 7f3e5fd621d5566b0a1f29ca295b064f8b2fd696
+  QIYU_iOS_SDK: 26ffda3ad7f797391cfe9836e4d935430e68a804
 
 PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
 
