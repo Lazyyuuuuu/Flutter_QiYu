@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:meta/meta.dart' show visibleForTesting;
 
 class Qiyu {
 
@@ -16,7 +15,6 @@ class Qiyu {
     return _instance;
   }
 
-  @visibleForTesting
   Qiyu.private(this._methodChannel, this._eventChannel);
 
   static Qiyu _instance;

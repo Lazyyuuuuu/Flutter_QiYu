@@ -1,8 +1,8 @@
 name: qiyu
-description: A new flutter plugin project.
+description: A qiyu plugin for flutter.
 version: 0.0.1
-author:
-homepage:
+author: Lazyyuuuuu <lazyyuuuuu@163.com>
+homepage: https://github.com/Lazyyuuuuu/Flutter_QiYu
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
