@@ -108,8 +108,6 @@ class _MyAppState extends State<HomeApp> {
         'userData': 'userData'
       }
     ],
-    'robotFirst':false,
-    'faqTemplateId':0,
     'showCloseSessionEntry':true,
     'showQuitQueue':true
   };
@@ -313,7 +311,7 @@ class _MyAppState extends State<HomeApp> {
                   ),
                   new FlatButton(
                     onPressed: (){
-                      Qiyu().setUserInfoWithVerificationResultCallback(_defaultUserInfo);
+                      Qiyu().setUserInfoWithVerificationResultCallback(_defaultUserInfo).then((value) => print(value));
                     },
                     child: new Text("setUserInfoWithVerificationResultCallback"),
                     textColor: Colors.blue,
