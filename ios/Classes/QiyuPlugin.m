@@ -317,7 +317,7 @@ static NSString *const EVENT_CHANNEL_NAME = @"plugins.lazyyuuuuu.io/event_qiyu";
         [[[QYSDK sharedSDK] conversationManager] setDelegate:self];
         self.receiveMessageEvent = [events copy];
     }
-    return nil;
+    return [FlutterError errorWithCode:@"" message:@"没有对应的事件" details:nil];
 }
 
 - (FlutterError *)onCancelWithArguments:(id)arguments {
@@ -348,7 +348,7 @@ static NSString *const EVENT_CHANNEL_NAME = @"plugins.lazyyuuuuu.io/event_qiyu";
     else if (arguments[@"onReceiveMessage"]) {
         self.receiveMessageEvent = nil;
     }
-    return nil;
+    return [FlutterError errorWithCode:@"" message:@"没有对应的事件" details:nil];
 }
 
 #pragma mark - AppDelegate

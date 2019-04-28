@@ -3,13 +3,12 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 class Qiyu {
-
   factory Qiyu() {
-    if(_instance == null) {
+    if (_instance == null) {
       final MethodChannel methodChannel =
-        const MethodChannel('plugins.lazyyuuuuu.io/qiyu');
+          const MethodChannel('plugins.lazyyuuuuu.io/qiyu');
       final EventChannel eventChannel =
-        const EventChannel('plugins.lazyyuuuuu.io/event_qiyu');
+          const EventChannel('plugins.lazyyuuuuu.io/event_qiyu');
       _instance = Qiyu.private(methodChannel, eventChannel);
     }
     return _instance;
@@ -32,7 +31,8 @@ class Qiyu {
   Stream<dynamic> _onReceiveMessage;
 
   Future<String> get platformVersion async {
-    final String version = await _methodChannel.invokeMethod('getPlatformVersion');
+    final String version =
+        await _methodChannel.invokeMethod('getPlatformVersion');
     return version;
   }
 
@@ -69,7 +69,8 @@ class Qiyu {
   }
 
   Future<dynamic> restoreCustomUIConfigToDefault() async {
-    var result = await _methodChannel.invokeMethod('restoreCustomUIConfigToDefault');
+    var result =
+        await _methodChannel.invokeMethod('restoreCustomUIConfigToDefault');
     return result;
   }
 
@@ -105,8 +106,7 @@ class Qiyu {
     return result;
   }
 
-  Future<dynamic> setUserInfoWithVerificationResultCallback(
-      Map param) async {
+  Future<dynamic> setUserInfoWithVerificationResultCallback(Map param) async {
     var result = await _methodChannel.invokeMethod(
         'setUserInfoWithVerificationResultCallback', param);
     return result;
@@ -118,8 +118,8 @@ class Qiyu {
   }
 
   Future<dynamic> registerPushMessageNotificationCallback() async {
-    var result =
-        await _methodChannel.invokeMethod('registerPushMessageNotificationCallback');
+    var result = await _methodChannel
+        .invokeMethod('registerPushMessageNotificationCallback');
     return result;
   }
 
@@ -129,7 +129,8 @@ class Qiyu {
   }
 
   Future<dynamic> cleanResourceCacheCallback() async {
-    var result = await _methodChannel.invokeMethod('cleanResourceCacheCallback');
+    var result =
+        await _methodChannel.invokeMethod('cleanResourceCacheCallback');
     return result;
   }
 
