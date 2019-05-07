@@ -117,11 +117,11 @@
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
       <pre class="language-dart"><code class="language-dart">factory Qiyu() {
-  if(_instance == null) {
+  if (_instance == null) {
     final MethodChannel methodChannel =
-      const MethodChannel(&#39;plugins.lazyyuuuuu.io&#47;qiyu&#39;);
+        const MethodChannel(&#39;plugins.lazyyuuuuu.io&#47;qiyu&#39;);
     final EventChannel eventChannel =
-      const EventChannel(&#39;plugins.lazyyuuuuu.io&#47;event_qiyu&#39;);
+        const EventChannel(&#39;plugins.lazyyuuuuu.io&#47;event_qiyu&#39;);
     _instance = Qiyu.private(methodChannel, eventChannel);
   }
   return _instance;
@@ -137,7 +137,7 @@
 
 <footer>
   <span class="no-break">
-    qiyu 0.0.1
+    qiyu 1.0.1
   </span>
 
   

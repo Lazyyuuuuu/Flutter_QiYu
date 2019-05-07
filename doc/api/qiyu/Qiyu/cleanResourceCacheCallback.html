@@ -114,11 +114,15 @@
 (<wbr>)
       
     </section>
+    <section class="desc markdown">
+      <p>clean resource cache callback</p>
+    </section>
     
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
       <pre class="language-dart"><code class="language-dart">Future&lt;dynamic&gt; cleanResourceCacheCallback() async {
-  var result = await _methodChannel.invokeMethod(&#39;cleanResourceCacheCallback&#39;);
+  var result =
+      await _methodChannel.invokeMethod(&#39;cleanResourceCacheCallback&#39;);
   return result;
 }</code></pre>
     </section>
@@ -132,7 +136,7 @@
 
 <footer>
   <span class="no-break">
-    qiyu 0.0.1
+    qiyu 1.0.1
   </span>
 
   

@@ -117,10 +117,14 @@
           
 </section>
         
-                        <section class="summary source-code" id="source">
+                <section class="desc markdown">
+          <p>get platformVersion</p>
+        </section>
+                <section class="summary source-code" id="source">
           <h2><span>Implementation</span></h2>
           <pre class="language-dart"><code class="language-dart">Future&lt;String&gt; get platformVersion async {
-  final String version = await _methodChannel.invokeMethod(&#39;getPlatformVersion&#39;);
+  final String version =
+      await _methodChannel.invokeMethod(&#39;getPlatformVersion&#39;);
   return version;
 }</code></pre>
         </section>
@@ -135,7 +139,7 @@
 
 <footer>
   <span class="no-break">
-    qiyu 0.0.1
+    qiyu 1.0.1
   </span>
 
   

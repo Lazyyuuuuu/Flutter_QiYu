@@ -114,11 +114,13 @@
 (<wbr><span class="parameter" id="setUserInfoWithVerificationResultCallback-param-param"><span class="type-annotation"><a href="dart-core/Map-class.html">Map</a></span> <span class="parameter-name">param</span></span>)
       
     </section>
+    <section class="desc markdown">
+      <p>set user info with verification result callback</p>
+    </section>
     
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
-      <pre class="language-dart"><code class="language-dart">Future&lt;dynamic&gt; setUserInfoWithVerificationResultCallback(
-    Map param) async {
+      <pre class="language-dart"><code class="language-dart">Future&lt;dynamic&gt; setUserInfoWithVerificationResultCallback(Map param) async {
   var result = await _methodChannel.invokeMethod(
       &#39;setUserInfoWithVerificationResultCallback&#39;, param);
   return result;
@@ -134,7 +136,7 @@
 
 <footer>
   <span class="no-break">
-    qiyu 0.0.1
+    qiyu 1.0.1
   </span>
 
   

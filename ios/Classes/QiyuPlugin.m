@@ -263,6 +263,7 @@ static NSString *const EVENT_CHANNEL_NAME = @"plugins.lazyyuuuuu.io/event_qiyu";
     }
     if ([arguments isEqualToString:@"onButtonClickCallback"]) {
         self.buttonClickCallbackEvent = [events copy];
+        return nil;
     }
     else if ([arguments isEqualToString:@"onURLClickCallback"]) {
         self.onURLClickCallbackEvent = [events copy];
@@ -271,6 +272,7 @@ static NSString *const EVENT_CHANNEL_NAME = @"plugins.lazyyuuuuu.io/event_qiyu";
                 self.onURLClickCallbackEvent(linkAddress);
             }
         };
+        return nil;
     }
     else if ([arguments isEqualToString:@"onBotClickCallback"]) {
         self.onBotClickCallbackEvent = [events copy];
@@ -280,6 +282,7 @@ static NSString *const EVENT_CHANNEL_NAME = @"plugins.lazyyuuuuu.io/event_qiyu";
                                                 @"params": params ? : @""});
             }
         };
+        return nil;
     }
     else if ([arguments isEqualToString:@"onQuitWaitingCallback"]) {
         self.onQuitWaitingCallbackEvent = [events copy];
@@ -288,6 +291,7 @@ static NSString *const EVENT_CHANNEL_NAME = @"plugins.lazyyuuuuu.io/event_qiyu";
                 self.onQuitWaitingCallbackEvent(@(quitType));
             }
         }];
+        return nil;
     }
     else if ([arguments isEqualToString:@"onPushMessageClickCallback"]) {
         self.onPushMessageClickCallbackEvent = [events copy];
@@ -296,6 +300,7 @@ static NSString *const EVENT_CHANNEL_NAME = @"plugins.lazyyuuuuu.io/event_qiyu";
                 self.onPushMessageClickCallbackEvent(linkAddress);
             }
         };
+        return nil;
     }
     else if ([arguments isEqualToString:@"onBotCustomInfoCallback"]) {
         self.onBotCustomInfoCallbackEvent = [events copy];
@@ -304,18 +309,22 @@ static NSString *const EVENT_CHANNEL_NAME = @"plugins.lazyyuuuuu.io/event_qiyu";
                 self.onBotCustomInfoCallbackEvent(array);
             }
         };
+        return nil;
     }
     else if ([arguments isEqualToString:@"onUnreadCountChanged"]) {
         [[[QYSDK sharedSDK] conversationManager] setDelegate:self];
         self.unreadCountChangedEvent = [events copy];
+        return nil;
     }
     else if ([arguments isEqualToString:@"onSessionListChanged"]) {
         [[[QYSDK sharedSDK] conversationManager] setDelegate:self];
         self.sessionListChangedEvent = [events copy];
+        return nil;
     }
     else if ([arguments isEqualToString:@"onReceiveMessage"]) {
         [[[QYSDK sharedSDK] conversationManager] setDelegate:self];
         self.receiveMessageEvent = [events copy];
+        return nil;
     }
     return [FlutterError errorWithCode:@"" message:@"没有对应的事件" details:nil];
 }
@@ -323,30 +332,39 @@ static NSString *const EVENT_CHANNEL_NAME = @"plugins.lazyyuuuuu.io/event_qiyu";
 - (FlutterError *)onCancelWithArguments:(id)arguments {
     if (arguments[@"onButtonClickCallback"]) {
         self.buttonClickCallbackEvent = nil;
+        return nil;
     }
     else if (arguments[@"onURLClickCallback"]) {
         self.onURLClickCallbackEvent = nil;
+        return nil;
     }
     else if (arguments[@"onBotClickCallback"]) {
         self.onBotClickCallbackEvent = nil;
+        return nil;
     }
     else if (arguments[@"onQuitWaitingCallback"]) {
         self.onQuitWaitingCallbackEvent = nil;
+        return nil;
     }
     else if (arguments[@"onPushMessageClickCallback"]) {
         self.onPushMessageClickCallbackEvent = nil;
+        return nil;
     }
     else if (arguments[@"onBotCustomInfoCallback"]) {
         self.onBotCustomInfoCallbackEvent = nil;
+        return nil;
     }
     else if (arguments[@"onUnreadCountChanged"]) {
         self.unreadCountChangedEvent = nil;
+        return nil;
     }
     else if (arguments[@"onSessionListChanged"]) {
         self.sessionListChangedEvent = nil;
+        return nil;
     }
     else if (arguments[@"onReceiveMessage"]) {
         self.receiveMessageEvent = nil;
+        return nil;
     }
     return [FlutterError errorWithCode:@"" message:@"没有对应的事件" details:nil];
 }

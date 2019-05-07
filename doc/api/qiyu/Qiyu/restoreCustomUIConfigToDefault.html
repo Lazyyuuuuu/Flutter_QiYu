@@ -114,11 +114,15 @@
 (<wbr>)
       
     </section>
+    <section class="desc markdown">
+      <p>restore custom config to default</p>
+    </section>
     
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
       <pre class="language-dart"><code class="language-dart">Future&lt;dynamic&gt; restoreCustomUIConfigToDefault() async {
-  var result = await _methodChannel.invokeMethod(&#39;restoreCustomUIConfigToDefault&#39;);
+  var result =
+      await _methodChannel.invokeMethod(&#39;restoreCustomUIConfigToDefault&#39;);
   return result;
 }</code></pre>
     </section>
@@ -132,7 +136,7 @@
 
 <footer>
   <span class="no-break">
-    qiyu 0.0.1
+    qiyu 1.0.1
   </span>
 
   

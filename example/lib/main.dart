@@ -25,7 +25,7 @@ class HomeApp extends StatefulWidget {
 
 class _MyAppState extends State<HomeApp> {
   //TODO 要改成你自己的appKey
-  var _appKey = 'appKey';
+  var _appKey = 'appkey';
   var _appName = 'QiYuDemo';
   var _defaultUIConfig = {
     'navBackgroundColor': '#FF0000',
@@ -420,7 +420,7 @@ class _MyAppState extends State<HomeApp> {
   void dispose() {
     super.dispose();
 
-    cancelSubscription();
+//    cancelSubscription();
   }
 
   void cancelSubscription() {
